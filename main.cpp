@@ -54,6 +54,7 @@ public:
 		// this - adres aktualnego obiektu
 		// *this - obiekt
 
+
 		return *this;
 	}
 
@@ -88,7 +89,32 @@ complex operator-(complex& c1, complex& c2) {
 
 // przeci��ony operator przesuni�cia bitowego (w C++ stosowany do wypisywania, zapisu do plik�w)
 ostream& operator<<(ostream& os, complex& c) {
-	os << c.get_real();
+	os << c.get_real();+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 	
 	double imag = c.get_imag();
 

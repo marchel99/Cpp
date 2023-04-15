@@ -39,61 +39,24 @@ void Auto::wypisz()
     std::cout << "Wypisuje.." << std::endl;
 }
 
+
+
 int main()
 {
-    string cars[] = {"peugeot", "fiat", "renault", "volkswagen"};
-    // tablica samochodow
 
+string userinput;
+cout<<"Podaj nazwe pojazdu"<<endl;
+cin>>userinput;
 
-    Auto peugot;
-    peugot.marka = "peugot";
-    peugot.model = "508";
-    peugot.rocznik = 2004;
-    peugot.przebieg = 196542;
+while (userinput!=NULL)
+{
 
-
-    cout << "Podaj nazwe obiektu" << endl;
-
-    string userInput;
-    cin >> userInput;
-
-    while (userInput.compare("peugot") == 0)
+//do sth
+}
 
 
 
-        if (userInput.compare("peugot") == 0)
-        {
-            Auto car;
-            car.wczytaj();
-        }
 
-    /*
-        int a = 0;
-        int b = 0;
-
-        cout << "Ile masz a" << endl;
-
-        cin >> a;
-
-        cout << "Ile masz b" << endl;
-
-        cin >> b;
-
-        int &a_ref = a;
-
-        cout << "a:" << a << endl
-             << "b:" << b << endl;
-     */
-    // podajemy jakiego typu jest to odniesienie
-    // nazwa odniesienia jest ze slowa "reference"
-    //  odniesienie odnosi się do zmiennej b
-
-    /*
-    int b=5;
-    int& refb=b;
-    refb=232;
-
-     */
 
     return 0;
 }

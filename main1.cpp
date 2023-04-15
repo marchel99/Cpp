@@ -1,13 +1,6 @@
- #include <iostream>
- using namespace std;
+#include <iostream>
 
- int main (){
-
-int i=5;
-
-cout <<" zmienna o adresie "<< std.endl;
-
-
-
-
- }
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}

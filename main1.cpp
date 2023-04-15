@@ -31,7 +31,7 @@ void Ksiazka::otworz()
 
 void Auto::wczytaj()
 {
-    std::cout << "Wczytuje.."  <<std::endl;
+    std::cout << "Wczytuje.." << std::endl;
 }
 
 void Auto::wypisz()
@@ -41,21 +41,31 @@ void Auto::wypisz()
 
 int main()
 {
+    string cars[] = {"peugeot", "fiat", "renault", "volkswagen"};
+    // tablica samochodow
+
 
     Auto peugot;
     peugot.marka = "peugot";
     peugot.model = "508";
-    peugot.rocznik=2004;
-    peugot.przebieg=196542;
+    peugot.rocznik = 2004;
+    peugot.przebieg = 196542;
 
-string a;
-cout << "Podaj nazwe obiektu" << endl;
- cin >> a;
 
-  if (a.compare("peugot") == 0) {
-    Auto car;
-    car.wczytaj();
-  }
+    cout << "Podaj nazwe obiektu" << endl;
+
+    string userInput;
+    cin >> userInput;
+
+    while (userInput.compare("peugot") == 0)
+
+
+
+        if (userInput.compare("peugot") == 0)
+        {
+            Auto car;
+            car.wczytaj();
+        }
 
     /*
         int a = 0;

@@ -51,7 +51,7 @@ cin>>userinput;
 while (userinput!=NULL)
 {
 
-//do sth
+//
 }
 
 

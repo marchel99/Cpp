@@ -16,9 +16,8 @@ int main()
 
 
 
-  cout << "POCZATEK QUIZU!" << endl;
   int liczbaPytan=zliczPytania(); 
- cout << liczbaPytan << endl;
+
 
 
     for (int i = 1; i <= 13; i++)
@@ -45,9 +44,9 @@ int main()
     float ekstra = (suma_e)*2 + suma_d;
     float wynik = intro + ekstra + suma_c;
     if (intro > ekstra)
-        cout << "Jestes introwertykiem! " << ((intro / wynik) * 100) << "%." << endl;
+        cout << "Jestes introwertykiem w " << ((intro / wynik) * 100) << "%." << endl;
     else if (ekstra > intro)
-        cout << "Jestes ekstrawertykiem! " << (ekstra / wynik) * 100 << "%." << endl;
+        cout << "Jestes ekstrawertykiem w " << (ekstra / wynik) * 100 << "%." << endl;
     else
         cout << "Jestes dziwakiem! " << endl;
     int d = 0;
@@ -59,14 +58,12 @@ int main()
     fstream myFile;
     // korzystanie z biblioteki fstream
     myFile.open("file.txt", ios::in);
-
     if (myFile.is_open())
     {
         string line;
         int i = 1;
         while (getline(myFile, line))
         {
-
             cout << i << ": ";
             cout << line << endl;
             ++i;
@@ -76,8 +73,6 @@ int main()
  */
 
 /*
-
-
     //ios czyli inpuit output stream
     myFile.open("file.txt", ios::out);
     // funkcja z dwoma argumentami
@@ -87,8 +82,6 @@ int main()
         myFile << "Hello!" << endl;
         myFile.close();
     }
-
-
  myFile.open("file.txt", ios::app);
     // funkcja z dwoma argumentami
     // ios:out ponieważ chce pisać w pliku
@@ -97,6 +90,4 @@ int main()
         myFile << "Hello2!" << endl;
         myFile.close();
     }
-
-
  */

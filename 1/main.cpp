@@ -23,7 +23,7 @@ int main()
             p[i].wczytaj();
             p[i].zadaj();
             p[i].sprawdz();
-system("cls");
+            system("cls");
             suma_a += p[i].ilosc_a;
             suma_b += p[i].ilosc_b;
             suma_c += p[i].ilosc_c;
@@ -32,36 +32,19 @@ system("cls");
             error == p[i].error;
         } while ((p[i].error == 1) || (p[i].odpowiedz.empty()));
     }
-
     cout << "KONIEC QUIZU!" << endl;
-
-    /*  cout << "a:" << suma_a << endl;
-     cout << "b:" << suma_b << endl;
-     cout << "c:" << suma_c << endl;
-     cout << "d:" << suma_d << endl;
-     cout << "e:" << suma_e << endl; */
-
     cout << "____________________________________________" << endl;
-
     float intro = (suma_a)*2 + suma_b;
     float ekstra = (suma_e)*2 + suma_d;
     float wynik = intro + ekstra + suma_c;
-
-    /* cout<< "wynik"<<wynik<< endl;
-    cout<< "intro"<<intro<< endl;
-    cout<< "ekstra"<<ekstra<< endl;
-     */
     if (intro > ekstra)
         cout << "Jestes introwertykiem! " << ((intro / wynik) * 100) << "%." << endl;
-
     else if (ekstra > intro)
         cout << "Jestes ekstrawertykiem! " << (ekstra / wynik) * 100 << "%." << endl;
     else
         cout << "Jestes dziwakiem! " << endl;
-
     int d = 0;
     cin >> d;
-
     return 0;
 }
 

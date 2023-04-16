@@ -1,7 +1,12 @@
 #include <iostream>
+#include <fstream>
 
-class Cars
+
+class Book
 {
-    public:
-    Cars();
+public:
+
+    int rok;
+    int ilosc_stron;
+
 };

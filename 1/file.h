@@ -16,6 +16,7 @@ public:
     int ilosc_c;
     int ilosc_d;
     int ilosc_e;
+    int error; // 0 lub 1
 
     int nr_pytania;
     int punkt; // 0 lub 1

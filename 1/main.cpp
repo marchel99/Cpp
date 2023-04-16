@@ -3,38 +3,43 @@
 #include <string>
 #include "file.h"
 using namespace std;
-
 int main()
 {
-
     int suma_a = 0;
     int suma_b = 0;
     int suma_c = 0;
     int suma_d = 0;
     int suma_e = 0;
-
+    int error = 0;
     Pytanie p[15];
 
     for (int i = 1; i <= 13; i++)
     {
-        p[i].nr_pytania = i;
-        p[i].wczytaj();
-        p[i].zadaj();
-        p[i].sprawdz();
-        suma_a += p[i].ilosc_a;
-        suma_b += p[i].ilosc_b;
-        suma_c += p[i].ilosc_c;
-        suma_d += p[i].ilosc_d;
-        suma_e += p[i].ilosc_e;
+        do
+        {
+
+            p[i].nr_pytania = i;
+            p[i].wczytaj();
+            p[i].zadaj();
+            p[i].sprawdz();
+
+            suma_a += p[i].ilosc_a;
+            suma_b += p[i].ilosc_b;
+            suma_c += p[i].ilosc_c;
+            suma_d += p[i].ilosc_d;
+            suma_e += p[i].ilosc_e;
+            error == p[i].error;
+        } while ((p[i].error == 1) || (p[i].odpowiedz.empty()));
     }
 
     cout << "KONIEC QUIZU!" << endl;
 
-    cout << "a:" << suma_a << endl;
-    cout << "b:" << suma_b << endl;
-    cout << "c:" << suma_c << endl;
-    cout << "d:" << suma_d << endl;
-    cout << "e:" << suma_e << endl;
+    /*  cout << "a:" << suma_a << endl;
+     cout << "b:" << suma_b << endl;
+     cout << "c:" << suma_c << endl;
+     cout << "d:" << suma_d << endl;
+     cout << "e:" << suma_e << endl; */
+
     cout << "____________________________________________" << endl;
 
     float intro = (suma_a)*2 + suma_b;

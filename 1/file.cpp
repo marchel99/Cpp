@@ -11,7 +11,7 @@ void Pytanie::wczytaj()
     {
 
         string line;
-        int nr_linii = (nr_pytania - 1)  + 1;
+        int nr_linii = (nr_pytania - 1) + 1;
         int aktualny_nr = 1;
 
         while (getline(file, line))
@@ -19,16 +19,6 @@ void Pytanie::wczytaj()
 
             if (aktualny_nr == nr_linii)
                 tresc = line;
-            if (aktualny_nr == nr_linii + 1)
-                a = line;
-            if (aktualny_nr == nr_linii + 2)
-                b = line;
-            if (aktualny_nr == nr_linii + 3)
-                c = line;
-            if (aktualny_nr == nr_linii + 4)
-                d = line;
-            if (aktualny_nr == nr_linii + 5)
-                e = line;
 
             aktualny_nr++;
         }
@@ -39,13 +29,13 @@ void Pytanie::wczytaj()
 void Pytanie::zadaj()
 {
     cout << endl;
-     cout << "____________________________________________" << endl;
-      cout   << tresc << endl;
+    cout << "____________________________________________" << endl;
+    cout << tresc << endl;
     cout << "1-Calkowicie sie zgadzam" << endl;
     cout << "2-Zgadzam sie" << endl;
-    cout << "3-Nie wiem"<< endl;
-    cout <<  "4-Nie zgadzam sie"<< endl;
-    cout << "5-Calkowicie sie zgadzam " << endl;
+    cout << "3-Nie wiem" << endl;
+    cout << "4-Nie zgadzam sie" << endl;
+    cout << "5-Calkowicie sie nie zgadzam " << endl;
     cout << "____________________________________________" << endl;
     cout << endl
          << "Odpowiedz: ";
@@ -62,6 +52,7 @@ void Pytanie::sprawdz()
         ilosc_c = 0;
         ilosc_d = 0;
         ilosc_e = 0;
+        error = 0;
     }
     else if (odpowiedz == "2")
     {
@@ -70,6 +61,7 @@ void Pytanie::sprawdz()
         ilosc_c = 0;
         ilosc_d = 0;
         ilosc_e = 0;
+        error = 0;
     }
     else if (odpowiedz == "3")
     {
@@ -78,6 +70,7 @@ void Pytanie::sprawdz()
         ilosc_c = 1;
         ilosc_d = 0;
         ilosc_e = 0;
+        error = 0;
     }
 
     else if (odpowiedz == "4")
@@ -87,6 +80,7 @@ void Pytanie::sprawdz()
         ilosc_c = 0;
         ilosc_d = 1;
         ilosc_e = 0;
+        error = 0;
     }
     else if (odpowiedz == "5")
     {
@@ -95,6 +89,7 @@ void Pytanie::sprawdz()
         ilosc_c = 0;
         ilosc_d = 0;
         ilosc_e = 1;
+        error = 0;
     }
     else
     {
@@ -103,5 +98,6 @@ void Pytanie::sprawdz()
         ilosc_c = 0;
         ilosc_d = 0;
         ilosc_e = 0;
+        error = 1;
     }
 }

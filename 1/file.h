@@ -7,7 +7,7 @@ class Pytanie
 {
 public:
     string tresc;
-    string a, b, c, d;
+    string a, b, c, d, e;
     string poprawna;
     string odpowiedz;
 
@@ -15,6 +15,7 @@ public:
     int ilosc_b;
     int ilosc_c;
     int ilosc_d;
+    int ilosc_e;
 
     int nr_pytania;
     int punkt; // 0 lub 1

@@ -7,37 +7,54 @@ using namespace std;
 int main()
 {
 
-int suma_a=0;
-int suma_b=0;
-int suma_c=0;
-int suma_d=0;
+    int suma_a = 0;
+    int suma_b = 0;
+    int suma_c = 0;
+    int suma_d = 0;
+    int suma_e = 0;
 
+    Pytanie p[15];
 
-Pytanie p[5];
+    for (int i = 1; i <= 13; i++)
+    {
+        p[i].nr_pytania = i;
+        p[i].wczytaj();
+        p[i].zadaj();
+        p[i].sprawdz();
+        suma_a += p[i].ilosc_a;
+        suma_b += p[i].ilosc_b;
+        suma_c += p[i].ilosc_c;
+        suma_d += p[i].ilosc_d;
+        suma_e += p[i].ilosc_e;
+    }
 
-for(int i=0;i<=4;i++)
-{
-p[i].nr_pytania=i+1;
-p[i].wczytaj();
-p[i].zadaj();
-p[i].sprawdz();
+    cout << "KONIEC QUIZU!" << endl;
 
-suma_a+=p[i].ilosc_a;
-suma_b+=p[i].ilosc_b;
-suma_c+=p[i].ilosc_c;
-suma_d+=p[i].ilosc_d;
-}
- 
+    cout << "a:" << suma_a << endl;
+    cout << "b:" << suma_b << endl;
+    cout << "c:" << suma_c << endl;
+    cout << "d:" << suma_d << endl;
+    cout << "e:" << suma_e << endl;
+    cout << "____________________________________________" << endl;
 
+    float intro = (suma_a)*2 + suma_b;
+    float ekstra = (suma_e)*2 + suma_d;
+    float wynik = intro + ekstra + suma_c;
 
+    /* cout<< "wynik"<<wynik<< endl;
+    cout<< "intro"<<intro<< endl;
+    cout<< "ekstra"<<ekstra<< endl;
+     */
+    if (intro > ekstra)
+        cout << "Jestes introwertykiem! " << ((intro / wynik) * 100) << "%." << endl;
 
+    else if (ekstra > intro)
+        cout << "Jestes ekstrawertykiem! " << (ekstra / wynik) * 100 << "%." << endl;
+    else
+        cout << "Jestes dziwakiem! " << endl;
 
-    cout<<"KONIEC QUIZU!"<<endl;
-
-   cout<<"a:"<<suma_a<<endl;
-   cout<<"b:"<<suma_b<<endl;
-   cout<<"c:"<<suma_c<<endl;
-   cout<<"d:"<<suma_d<<endl;
+    int d = 0;
+    cin >> d;
 
     return 0;
 }

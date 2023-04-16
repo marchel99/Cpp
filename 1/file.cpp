@@ -11,7 +11,7 @@ void Pytanie::wczytaj()
     {
 
         string line;
-        int nr_linii = (nr_pytania - 1) * 6 + 1;
+        int nr_linii = (nr_pytania - 1)  + 1;
         int aktualny_nr = 1;
 
         while (getline(file, line))
@@ -28,7 +28,7 @@ void Pytanie::wczytaj()
             if (aktualny_nr == nr_linii + 4)
                 d = line;
             if (aktualny_nr == nr_linii + 5)
-                poprawna = line;
+                e = line;
 
             aktualny_nr++;
         }
@@ -38,56 +38,70 @@ void Pytanie::wczytaj()
 
 void Pytanie::zadaj()
 {
+    cout << endl;
+     cout << "____________________________________________" << endl;
+      cout   << tresc << endl;
+    cout << "1-Calkowicie sie zgadzam" << endl;
+    cout << "2-Zgadzam sie" << endl;
+    cout << "3-Nie wiem"<< endl;
+    cout <<  "4-Nie zgadzam sie"<< endl;
+    cout << "5-Calkowicie sie zgadzam " << endl;
+    cout << "____________________________________________" << endl;
     cout << endl
-         << tresc << endl;
-    cout << a << endl;
-    cout << b << endl;
-    cout << c << endl;
-    cout << d << endl;
-    cout << "---------" << endl;
-    cout << endl
-         << "Odpowiedz";
+         << "Odpowiedz: ";
     cin >> odpowiedz;
 }
 
 void Pytanie::sprawdz()
 {
 
-    if (odpowiedz == "a")
+    if (odpowiedz == "1")
     {
         ilosc_a = 1;
         ilosc_b = 0;
         ilosc_c = 0;
         ilosc_d = 0;
+        ilosc_e = 0;
     }
-    else if (odpowiedz == "b")
+    else if (odpowiedz == "2")
     {
         ilosc_a = 0;
         ilosc_b = 1;
         ilosc_c = 0;
         ilosc_d = 0;
+        ilosc_e = 0;
     }
-    else if (odpowiedz == "c")
+    else if (odpowiedz == "3")
     {
         ilosc_a = 0;
         ilosc_b = 0;
         ilosc_c = 1;
         ilosc_d = 0;
+        ilosc_e = 0;
     }
 
-    else if (odpowiedz == "d")
+    else if (odpowiedz == "4")
     {
         ilosc_a = 0;
         ilosc_b = 0;
         ilosc_c = 0;
         ilosc_d = 1;
+        ilosc_e = 0;
     }
-    else{
-  ilosc_a = 0;
+    else if (odpowiedz == "5")
+    {
+        ilosc_a = 0;
         ilosc_b = 0;
         ilosc_c = 0;
         ilosc_d = 0;
-
+        ilosc_e = 1;
     }
- 
+    else
+    {
+        ilosc_a = 0;
+        ilosc_b = 0;
+        ilosc_c = 0;
+        ilosc_d = 0;
+        ilosc_e = 0;
+    }
 }

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <cstdlib>
 #include "file.h"
 using namespace std;
 int main()
@@ -22,7 +23,7 @@ int main()
             p[i].wczytaj();
             p[i].zadaj();
             p[i].sprawdz();
-
+system("cls");
             suma_a += p[i].ilosc_a;
             suma_b += p[i].ilosc_b;
             suma_c += p[i].ilosc_c;

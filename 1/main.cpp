@@ -14,6 +14,13 @@ int main()
     int error = 0;
     Pytanie p[15];
 
+
+
+  cout << "POCZATEK QUIZU!" << endl;
+  int liczbaPytan=zliczPytania(); 
+ cout << liczbaPytan << endl;
+
+
     for (int i = 1; i <= 13; i++)
     {
         do

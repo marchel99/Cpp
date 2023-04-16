@@ -10,7 +10,6 @@ public:
     string a, b, c, d, e;
     string poprawna;
     string odpowiedz;
-
     int ilosc_a;
     int ilosc_b;
     int ilosc_c;
@@ -25,3 +24,5 @@ public:
     void zadaj();   // pobierz odpowiedz od uzytkownika
     void sprawdz(); // sprawdz czy ta odp jest dobra
 };
+
+    int zliczPytania();

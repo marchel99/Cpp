@@ -10,9 +10,10 @@ void Pytanie::wczytaj()
     if (file.is_open())
     {
 
+        int aktualny_nr = 1;
+
         string line;
         int nr_linii = (nr_pytania - 1) + 1;
-        int aktualny_nr = 1;
 
         while (getline(file, line))
         {
@@ -30,7 +31,8 @@ void Pytanie::zadaj()
 {
     cout << endl;
     cout << "____________________________________________" << endl;
-    cout << tresc << endl;
+    cout << "Pytanie " << nr_pytania << "/13" << endl
+         << tresc << endl;
     cout << "1-Calkowicie sie zgadzam" << endl;
     cout << "2-Zgadzam sie" << endl;
     cout << "3-Nie wiem" << endl;
@@ -99,5 +101,24 @@ void Pytanie::sprawdz()
         ilosc_d = 0;
         ilosc_e = 0;
         error = 1;
+    }
+}
+
+int zliczPytania()
+{
+
+    int count = 0;
+    fstream file;
+    string line;
+    file.open("file.txt", ios::in);
+
+    if (file.is_open())
+    {
+
+        while (getline(file, line))
+        {
+            count++;
+        }
+        return count;
     }
 }

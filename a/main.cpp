@@ -1,19 +1,23 @@
 #include <iostream>
 #include "file.h"
+
 using namespace std;
 
 int main()
 {
 
-   cout << "H, W!" << endl;
-   string zmienna;
-
-   while (true)
+   Pytanie p[5];
+   int suma = 0;
+   for (int i = 0; i <= 4; i++)
    {
-
-      cout << "wypisz cos" << endl;
-      cin >> zmienna;
+      p[i].nr_pytania = i + 1;
+      p[i].wczytaj();
+      p[i].zadaj();
+      p[i].sprawdz();
+      suma += p[i].punkt;
    }
+
+   cout << "KONIEC QUIZU! PUNKTY = " << suma;
 
    return 0;
 }

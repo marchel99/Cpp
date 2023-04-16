@@ -1,24 +1,19 @@
 #include <iostream>
+#include "file.h"
 using namespace std;
 
+int main()
+{
 
- int main() 
- {
- 
- cout <<"H, W!" << endl;
- string zmienna;
+   cout << "H, W!" << endl;
+   string zmienna;
 
- while(true){
+   while (true)
+   {
 
- 
+      cout << "wypisz cos" << endl;
+      cin >> zmienna;
+   }
 
-
-
-cout <<"wypisz cos" << endl;
-cin >> zmienna;
-
-
- }
-
-    return 0;
- }
+   return 0;
+}

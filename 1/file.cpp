@@ -39,8 +39,7 @@ void Pytanie::wczytaj()
 void Pytanie::zadaj()
 {
     cout << endl
-         << tresc <<
-        endl;
+         << tresc << endl;
     cout << a << endl;
     cout << b << endl;
     cout << c << endl;
@@ -53,10 +52,42 @@ void Pytanie::zadaj()
 
 void Pytanie::sprawdz()
 {
-    if (odpowiedz == poprawna)
 
-        punkt = 1;
-    else
-        punkt = 0;
+    if (odpowiedz == "a")
+    {
+        ilosc_a = 1;
+        ilosc_b = 0;
+        ilosc_c = 0;
+        ilosc_d = 0;
+    }
+    else if (odpowiedz == "b")
+    {
+        ilosc_a = 0;
+        ilosc_b = 1;
+        ilosc_c = 0;
+        ilosc_d = 0;
+    }
+    else if (odpowiedz == "c")
+    {
+        ilosc_a = 0;
+        ilosc_b = 0;
+        ilosc_c = 1;
+        ilosc_d = 0;
+    }
+
+    else if (odpowiedz == "d")
+    {
+        ilosc_a = 0;
+        ilosc_b = 0;
+        ilosc_c = 0;
+        ilosc_d = 1;
+    }
+    else{
+  ilosc_a = 0;
+        ilosc_b = 0;
+        ilosc_c = 0;
+        ilosc_d = 0;
+
+    }
+ 
 }
-

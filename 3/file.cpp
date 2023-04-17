@@ -21,7 +21,7 @@ void Punkt::wczytaj()
     cin >> nazwa;
 }
 
-Prostokat::Prostokat(string n, float xx, float yy, float s, float w)
+Square::Square(string n, float xx, float yy, float s, float w)
 {
     nazwa = n;
     x = xx;
@@ -30,7 +30,7 @@ Prostokat::Prostokat(string n, float xx, float yy, float s, float w)
     wysokosc = w;
 }
 
-void Prostokat::wczytaj()
+void Square::wczytaj()
 {
 
     cout << "Podaj x: lewego dolnego naroznika ";
@@ -41,6 +41,6 @@ void Prostokat::wczytaj()
     cin >> szerokosc;
     cout << "Podaj wysokosc: ";
     cin >> wysokosc;
-    cout << "Podaj nazwe prostokata: ";
+    cout << "Podaj nazwe Squarea: ";
     cin >> nazwa;
 }

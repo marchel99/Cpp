@@ -29,7 +29,13 @@ void Event::load()
     cin >> minutes;
 }
 
-//definicja konstruktora
+void Event::show()
+{
+    cout << endl
+         << name << " " << day << "." << month << "." << year << " " << hour << ":" << minutes << endl;
+}
+
+// definicja konstruktora
 Event::Event(string n, int d, int m, int y, int h, int mins)
 {
 
@@ -39,4 +45,10 @@ Event::Event(string n, int d, int m, int y, int h, int mins)
     year = y;
     hour = h;
     minutes = mins;
+}
+
+// definicja destruktora
+Event::~Event()
+{
+    cout << "Destruktor" << endl;
 }

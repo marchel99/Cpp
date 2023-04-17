@@ -9,14 +9,11 @@ class Event
     string name;
 
 public:
-
-    Event(string, int, int, int, int, int);
-     //Konstruktor
-
+    Event(string="brak", int=1, int=1, int=2000, int=12, int=0);
+    // Konstruktor z ustawionymi wartościami domyślnymi
 
     ~Event();
-    //Destruktor
-
+    // Destruktor
 
     void load();
     void show();

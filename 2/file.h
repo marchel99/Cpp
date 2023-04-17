@@ -11,6 +11,7 @@ class Event
 public:
     Event(string="brak", int=1, int=1, int=2000, int=12, int=0);
     // Konstruktor z ustawionymi wartościami domyślnymi
+    // Konstruktor to funkcja która nie zwraca żadnego typu
 
     ~Event();
     // Destruktor

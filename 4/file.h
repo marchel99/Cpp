@@ -19,9 +19,12 @@ public:
     void set();
 };
 
-class MojaKlasa
-{
 
 
-
+class MyClass {
+private:
+    int x;
+public:
+    MyClass() : x(0) {}
+    friend void printX(MyClass obj);
 };

@@ -4,6 +4,8 @@ using namespace std;
 
 class Sample
 {
+
+    
 public:
     int a;
     int b;

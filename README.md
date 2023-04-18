@@ -1,3 +1,1 @@
-# Cpp
-
-This repository contains my progress in learning C++. I am currently a beginner in this language and I will be sharing my projects and exercises as I improve my skills.
+In this repository, I document my Object-Oriented Programming (OOP) learning journey. Starting with simple projects and progressing towards more advanced ones, including quizzes and Windows applications.

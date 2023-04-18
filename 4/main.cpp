@@ -8,16 +8,17 @@ void printX()
     std::cout << "Friend!" << endl;
 }
 
-void printSample(Sample a)
+void printSample(Sample ab)
 {
-
-    cout << a<< endl;
+  cout<< ab.b <<endl;
 }
 
 int main()
 {
 
-printSample();
+Sample s1;
+
+printSample(s1);
 
 /* 
     Sample s1;

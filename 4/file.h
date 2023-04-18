@@ -25,8 +25,19 @@ public:
 class MyClass
 {
 private:
-    int x;
+    int a;
+  int b;
+  int c;
+
 
 public:
         friend void printX();
+};
+
+
+class child_myClass :public MyClass
+{
+
+
+    
 };

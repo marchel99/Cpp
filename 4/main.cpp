@@ -8,11 +8,9 @@ void printX()
     std::cout << "Friend!" << endl;
 }
 
-
-
 // ab = dzialamy nakopii
 // &ab dzialamy na referencji
-void printSample(Sample ab)
+void printSample(Sample &ab)
 {
     cout << "a" << endl;
     cin >> ab.a;
@@ -35,22 +33,13 @@ int main()
 {
 
     Sample s1;
-//tworzenie obiektu 
-//wg klasy Sample
-//Klasa jest gotowym wzorcem obiektu
-
-
+    // tworzenie obiektu
+    // wg klasy Sample
+    // Klasa jest gotowym wzorcem obiektu
 
 
     printSample(s1);
     wypisz(s1);
 
-    /*
-        Sample s1;
-
-        s1.get();
-
-        printX();
-     */
     return 0;
 }

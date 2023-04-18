@@ -6,8 +6,9 @@ void Sample::get()
 {
 
     cout << a << endl
-         << b<<endl<<c<<endl
-         
+         << b << endl
+         << c << endl
+
          << name << endl;
 }
 
@@ -23,6 +24,7 @@ Sample::Sample(int aa, int bb, int cc)
     c = cc;
 }
 
-Sample::~Sample(){
-    cout<<"Helo"<<endl;
+Sample::~Sample()
+{
+    cout << "Helo" << endl;
 }

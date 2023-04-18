@@ -19,6 +19,7 @@ public:
     void set();
 
     friend void aaaprintSample();
+    friend void wypisz();
 };
 
 class MyClass
@@ -27,6 +28,5 @@ private:
     int x;
 
 public:
-    
-    friend void printX();
+        friend void printX();
 };

@@ -17,14 +17,16 @@ public:
 
     void get();
     void set();
+
+    friend void aaaprintSample();
 };
 
-
-
-class MyClass {
+class MyClass
+{
 private:
     int x;
+
 public:
-    MyClass() : x(0) {}
-    friend void printX(MyClass obj);
+    
+    friend void printX();
 };

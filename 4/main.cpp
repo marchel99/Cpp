@@ -7,7 +7,9 @@ int main()
 {
 
 
-    Sample s1;
+    Sample
+     s1;
+     
     s1.a=1;
     s1.b=2;
     s1.name="Wi";

@@ -8,10 +8,40 @@ void printX()
     std::cout << "Friend!" << endl;
 }
 
-// ab = dzialamy nakopii
+void funkcja(Sample &a){
+a.a=1;
+
+
+}
+
+
+
+void child(child_myClass &cos)
+{
+    cout << "a" << endl;
+    cin >> cos.a;
+    cout << "b" << endl;
+    cin >> cos.b;
+    cout << "c" << endl;
+    cin >> cos.c;
+    cout << "d" << endl;
+    cin >> cos.d;
+}
+
+
+
+
+void wypisz(Sample &siema)
+{
+    cin >> siema.a;
+}
+
+
+
 // &ab dzialamy na referencji
 void printSample(Sample &ab)
 {
+
     cout << "a" << endl;
     cin >> ab.a;
     cout << "b" << endl;
@@ -36,7 +66,6 @@ int main()
     // tworzenie obiektu
     // wg klasy Sample
     // Klasa jest gotowym wzorcem obiektu
-
 
     printSample(s1);
     wypisz(s1);

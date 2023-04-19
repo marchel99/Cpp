@@ -8,15 +8,12 @@ void printX()
     std::cout << "Friend!" << endl;
 }
 
-void funkcja(Sample &a){
-a.a=1;
-
-
+void funkcja(Sample &a)
+{
+    a.a = 1;
 }
 
-
-
-void child(child_myClass &cos)
+void childchild_myClass &cos)
 {
     cout << "a" << endl;
     cin >> cos.a;
@@ -28,15 +25,10 @@ void child(child_myClass &cos)
     cin >> cos.d;
 }
 
-
-
-
 void wypisz(Sample &siema)
 {
     cin >> siema.a;
 }
-
-
 
 // &ab dzialamy na referencji
 void printSample(Sample &ab)

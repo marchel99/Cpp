@@ -5,7 +5,6 @@ using namespace std;
 class Sample
 {
 
-
   int a;
   int b;
   int c;
@@ -34,19 +33,16 @@ public:
   friend void child();
 };
 
-
-class dziecko :public Sample
+class dziecko : public Sample
 {
-  
- // friend void funkcja();
+
+  // friend void funkcja();
 };
 
-
-
-class child_myClass :public MyClass
+class child_myClass : public MyClass
 {
-public:
+
   int d;
 
-  friend void child();
+  friend void child(child_myClass &cxos);
 };

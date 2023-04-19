@@ -4,12 +4,11 @@ using namespace std;
 
 class Parent
 {
-
+public:
     int a;
     int b;
     string nazwa;
 
-public:
     void set();
     void get();
 
@@ -17,8 +16,15 @@ public:
     // deklaracja konstruktora
 };
 
-class Child :public Parent
+class Child : public Parent
 {
 public:
     int c;
+
+    void setData(int value)
+    {
+
+        this->a = a;
+        this->b = b;
+    }
 };

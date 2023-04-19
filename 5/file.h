@@ -9,6 +9,8 @@ class Parent
     int b;
     string nazwa;
 
+public:
+
     void set();
     void get();
 

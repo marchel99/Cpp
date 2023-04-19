@@ -6,7 +6,14 @@ using namespace std;
 int main()
 {
 
-Parent p1;
-p1.get();
+    Parent p1;
+    p1.get();
+
+
+
+    Child c1;
+  
+  
+    c1.c=2;
 
 }

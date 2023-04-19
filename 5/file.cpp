@@ -19,9 +19,9 @@ void Parent::set()
 
 // definicja konstruktora
 // konieczny jest operator dostepu
-Parent::Parent(int aa, int bb,string n)
+Parent::Parent(int aa, int bb, string n)
 {
-    a=aa;
-    b=bb;
-    nazwa=n;
+    a = aa;
+    b = bb;
+    nazwa = n;
 }

@@ -14,7 +14,7 @@ public:
     void get();
     void set();
 
-}
+};
 
 
 class Parent

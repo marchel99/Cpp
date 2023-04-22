@@ -6,6 +6,8 @@ using namespace std;
 int main()
 {
 
+
+
     Parent p1;
     p1.get();
 

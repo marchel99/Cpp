@@ -2,6 +2,15 @@
 #include <string>
 using namespace std;
 
+
+class Book
+{
+
+
+    
+}
+
+
 class Parent
 {
 public:

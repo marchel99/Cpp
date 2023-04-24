@@ -2,7 +2,6 @@
 #include <string>
 using namespace std;
 
-
 class Book
 {
     string tytul;
@@ -10,12 +9,11 @@ class Book
     string autor;
     int rok_wydania;
     int ilosc_stron;
+
 public:
     void get();
     void set();
-
 };
-
 
 class Parent
 {

@@ -16,10 +16,15 @@ public:
 };
 
 class Parent
+
+
+
+
 {
 public:
     int a;
     int b;
+    
     string nazwa;
 
     void set();

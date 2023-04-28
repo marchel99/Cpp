@@ -3,25 +3,37 @@
 using namespace std;
 #include "file.h"
 
-void Parent::get()
-{
-    cout << "a : " << a << endl
-         << "b: " << b << endl
-         << "nazwa: " << nazwa << endl;
+
+
+
+
+void Book::get(){
+
+ cout << "tytul : " << tytul << endl
+         << "wydawnictwo: " << wydawnictwo << endl
+         << "autor: " << autor << endl
+  << "rok_wydania: " << rok_wydania<< endl
+  << "ilosc_stron: " << ilosc_stron<< endl;
+
+
 }
 
-void Parent::set()
-{
-    cin >> a;
-    cin >> b;
-    cin >> nazwa;
+void Book::set(){
+  cin >> tytul;
+    cin >> wydawnictwo;
+    cin >> autor;
+     cin >> rok_wydania;
+      cin >> ilosc_stron;
 }
 
-// definicja konstruktora
-// konieczny jest operator dostepu
-Parent::Parent(int aa, int bb, string n)
-{
-    a = aa;
-    b = bb;
-    nazwa = n;
-}
+
+
+
+
+
+
+
+
+
+
+

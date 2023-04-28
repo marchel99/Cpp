@@ -6,13 +6,9 @@ using namespace std;
 int main()
 {
 
+Book ksiazka;
 
+ksiazka.set();
 
-    Parent p1;
-    p1.get();
-
-    Child c1;
-
-    c1.c = 2;
-    c1.get();
+   
 }

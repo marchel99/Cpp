@@ -5,9 +5,9 @@ using namespace std;
 
 int main()
 {
-
-    string userinput;
-
+  
+    string userinput:
+//233
     while
      (1)
     {

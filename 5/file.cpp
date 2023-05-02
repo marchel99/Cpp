@@ -19,10 +19,15 @@ void Book::get(){
 }
 
 void Book::set(){
+     cout << "podaj tytul : " << endl;
   cin >> tytul;
+       cout << "podaj wydawnictwo: " << endl;
     cin >> wydawnictwo;
+         cout << "podaj autora : " << endl;
     cin >> autor;
+             cout << "podaj rok wyd: " << endl;
      cin >> rok_wydania;
+              cout << "podaj liczbe stron" << endl;
       cin >> ilosc_stron;
 }
 

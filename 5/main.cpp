@@ -6,9 +6,11 @@ using namespace std;
 int main()
 {
 
-Book ksiazka;
+Book book;
 
-ksiazka.set();
+
+cout << book << endl;
+   
 
    
 }

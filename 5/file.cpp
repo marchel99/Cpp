@@ -27,7 +27,7 @@ void Book::set(){
     cin >> autor;
              cout << "podaj rok wyd: " << endl;
      cin >> rok_wydania;
-              cout << "podaj liczbe stron" << endl;
+              cout << "podaj liczbe" << endl;
       cin >> ilosc_stron;
 }
 

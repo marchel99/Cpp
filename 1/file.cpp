@@ -2,6 +2,7 @@
 #include "file.h"
 using namespace std;
 
+
 void Pytanie::wczytaj()
 {
     fstream file;
